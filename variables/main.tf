@@ -34,6 +34,7 @@ resource "aws_vpc" "myvpc"{
 
     tags = {
         # NAME = var.vpcname -> for strings
-        Name = var.mylist[0]
+        # Name = var.mylist[0]
+        Name = var.mymap["Key1"]
     }
 }
