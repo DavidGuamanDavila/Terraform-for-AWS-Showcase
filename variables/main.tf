@@ -48,3 +48,17 @@ resource "aws_vpc" "myvpc"{
 output "vpcid" {
   value = aws_vpc.myvpc.id
 }
+
+variable "mytuple" {
+    type = tuple([string, number, string])
+    default = [ "calendar", 21, "pencil" ]
+}
+
+variable "myobject" {
+    type = object({name = string, port = list(number)})
+    default = {
+      name = "David"
+      port = [21, 73, 45, 71]
+    }
+  
+}
