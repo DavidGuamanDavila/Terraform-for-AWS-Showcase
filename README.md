@@ -2,4 +2,4 @@
 ## Description
 
 ## Resources
-- [Setup IAM user video](https://www.youtube.com/watch?v=HuE-QhrmE1c)
+- [Setup IAM user in AWS video tutorial](https://www.youtube.com/watch?v=HuE-QhrmE1c)
