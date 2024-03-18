@@ -11,17 +11,17 @@ resource "aws_instance" "ec2" {
 resource "aws_security_group" "webtraffic" {
   name = "Allow HTTPS"
 
-  ingress = {
+  ingress {
     from_port = 443 # Here you can configure a range of ports
     to_port = 443
     protocol = "TCP"
-    cidr = ["0.0.0.0/0"] 
+    cidr_blocks = ["0.0.0.0/0"] 
   }
 
-  egress = {
+  egress {
     from_port = 443 # Here you can configure a range of ports
     to_port = 443
     protocol = "TCP"
-    cidr = ["0.0.0.0/0"] 
+    cidr_blocks = ["0.0.0.0/0"] 
   }
 }
